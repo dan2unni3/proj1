@@ -18,11 +18,60 @@
    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script> <!--마이그레이트-->
    <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script> <!--슬릭+파일복사+열어보기-->
    <script src="js/slide.js"></script> <!--별도 파일로 제작--><!--js는 어느 줄에 넣는지 중요-->
+   <script src="js/navpop.js"></script>
 
 </head>
 
 <body>
 <div id="wrap">
+  <div id="nav_pop">
+    <div class="navpop_inner">
+      <h1 id="nav_logo"><img src="images/logo.png" alt="로고"><button class="nav_close">닫기</button></h1>
+      <ul class="depth1">
+        <li><a href="#">스타피부과소개</a>
+              <ul class="depth2">
+               <li><a href="#">스타피부과이념</a>
+               </li>
+               <li><a href="#">연혁</a>
+               </li>
+               <li><a href="#">의료진소개</a>
+               </li>
+               <li><a href="#">채용안내</a>
+               </li>
+               <li><a href="#">시설소개</a>
+               </li>
+            </ul>
+        </li>
+        <li><a href="#">커뮤니티</a>
+              <ul class="depth2">
+               <li><a href="#">스타소식</a>
+               </li>
+               <li><a href="#">공지사항</a>
+               </li>
+               <li><a href="#">시술후기</a>
+               </li>
+               <li><a href="#">전후사진</a>
+               </li>
+            </ul>
+        </li>
+        <li><a href="#">상담예약</a>
+        </li>
+        <li><a href="#">레이저클리닉</a>
+              <ul class="depth2">
+               <li><a href="#">여드름</a>
+               </li>
+               <li><a href="#">흉터모공</a>
+               </li>
+            </ul>
+        </li>
+        <li><a href="#">피부클리닉</a>
+        </li>
+        <li><a href="#">스페셜클리닉</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div id="top_popup">
     <a href="#"><img src="images/top_popup.png" alt="상단배너"></a>
     <button class="close sound_only">닫기</button>
@@ -83,7 +132,12 @@
               <li><a href="#">스페셜클리닉</a>
               </li>
           </ul>
-          <div class="top_icon"></div>
+          <div class="top_icon">
+            <a class="icon1" href="#"><img src="images/icon1.png" alt="햄버거버튼"></a>
+            <a href="#"><img src="images/icon2.png" alt="검색버튼"></a>
+            <a href="#"><img src="images/icon3.png" alt="마이페이지버튼"></a>
+            <a href="#"><img src="images/icon4.png" alt="홈버튼"></a>
+          </div>
       </nav>
     
     </div>
@@ -120,7 +174,7 @@
       <div>
        <a href="#" >
         <p>제목</p>
-        <p class="clinic_img"><img src="images/clinic.png" alt="주요클리닉1"></p>
+        <p class="clinic_img"><img src="" alt="주요클리닉1"></p>
         <p class="clinic_txt">내용</p>
         <button>바로가기</button>
        </a>
@@ -128,7 +182,7 @@
       <div>
         <a href="#" >
           <p>제목</p>
-          <p class="clinic_img"><img src="images/clinic.png" alt="주요클리닉2"></p>
+          <p class="clinic_img"><img src="" alt="주요클리닉2"></p>
           <p class="clinic_txt">내용</p>
           <button>바로가기</button>
          </a>
@@ -136,7 +190,7 @@
       <div>
         <a href="#" >
           <p>제목</p>
-          <p class="clinic_img"><img src="images/clinic.png" alt="주요클리닉3"></p>
+          <p class="clinic_img"><img src="" alt="주요클리닉3"></p>
           <p class="clinic_txt">내용</p>
           <button>바로가기</button>
          </a>
@@ -219,12 +273,29 @@
 
   <footer id="footer">
     <div class="inner">
-      <ul class="f_list">
+      <ul class="f_list01">
         <li><a href="#">이용약관</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">이용약관</a></li>
+        <li><a href="#" style="font-weight:bold;">개인정보처리방침</a></li>
+        <li><a href="#">제3자운영동의약관</a></li>
+        <li><a href="#">이메일무단수집거부</a></li>
+        <li><a href="#">환자의권리</a></li>
+        <li><a href="#">비급여금액안내</a></li>
+        <li><a href="#">통합수신거부/해제</a></li>
+        <li><a href="#">서식자료실</a></li>
+      </ul>
+      
+      <ul class="f_list02">
+        <li class="f_logo">
+          <a href="#">
+            <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+        </li>
+        <li class="f_info">
+            <p>상호명: 스타피부과의원</p>
+            <p>주소: 부산광역시 부산진구 서면로 74 아이온시티빌딩 2층 ( 서면지하철역 5번, 7번 출구 )</p>
+            <p>전화번호: 051-818-2300<span> </span>팩스: 051-818-2310<span> </span>이메일: starpipu@naver.com</p>
+            <p>대표: 조시형<span> </span>사업자등록번호: 605-24-84306</p>
+            <p>copyright(c) 스타피부과 all right reserved</p>
+        </li>
       </ul>
     </div>
   </footer>

@@ -32,11 +32,48 @@ button{outline:0}
 #wrap{width:100%;min-width:1024px;overflow:hidden;}
 .inner{min-width:1024px;max-width:1280px;margin: 0 auto} /* 1024~1280 사이에서는 크기가 100%이다 */
 #header .top_icon{float:right;
-      width:215px; height:75px;
-      background-color:#ba965a;}
+      width:300px; height:75px;
+      background-color:transparent;}
+
+
+#nav_pop{
+      position:fixed;width:100%;min-width:1024px; /*1024보다 작아지지 않도록*/
+      height:100%;overflow:auto;
+      color:white;
+      background-color:/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ba965a+0,652c81+100 */
+      background: #ba965a; /* Old browsers */
+      background: -moz-linear-gradient(-45deg,  #ba965a 0%, #652c81 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg,  #ba965a 0%,#652c81 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg,  #ba965a 0%,#652c81 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba965a', endColorstr='#652c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      ;
+      z-index:9999999999999999; /*얘 z-index 제일 많이 줘야 함 */
+      
+      display:none;} /**/
+
+#nav_pop .navpop_inner{
+      width:1024px;margin:0 auto;}
+
+#nav_pop #nav_logo{
+      position:relative;}
+
+#nav_pop #nav_logo img{
+      width:20%;}
+
+#nav_pop #nav_logo .nav_close{
+      position:absolute;top:0;right:0;}
+
+#nav_pop .depth1 > li {
+      width:25%;float:left;margin-bottom:100px;}
+
+#nav_pop .depth1 > li > a{
+      font-size:1.3rem;margin-bottom:20px;display:block;} /*inline-block도 괜찮*/
+
+#nav_pop .depth1 ul{}
+
 
     /* 네비4 - 메가네비100% */
-#header .inner{position:relative;}
+      #header .inner{position:relative;}
       #nav4 .depth1{position:absolute;top:0px;left:0;}
 
       #nav4 .depth1 > li{float:left;padding:0 20px}
@@ -93,3 +130,6 @@ button{outline:0}
       padding-left:10px;
       padding-right:10px;}
 #footer ul li:last-child{border-right:none;}
+#footer .f_logo{width:400px;border-right:none;}
+#footer img{width:50%;}
+#footer .f_info{}
